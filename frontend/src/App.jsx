@@ -112,7 +112,7 @@ const handleStarClick = (selectedStars) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/reviews', {
+      const response = await fetch('https://emerald-backend-2ysf.onrender.com/api/reviews', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

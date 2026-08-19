@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://emerald-backend-2ysf.onrender.com');
 
 export default function ManagerDashboard() {
   const [reviews, setReviews] = useState([]);
@@ -9,7 +9,7 @@ export default function ManagerDashboard() {
 
   // Fetch initial reviews & listen for live alerts via Socket.io
   useEffect(() => {
-    fetch('http://localhost:5000/api/reviews')
+    fetch('https://emerald-backend-2ysf.onrender.com/api/reviews')
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setReviews(data.data);
