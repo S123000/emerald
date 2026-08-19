@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import ManagerDashboard from './ManagerDashboard';
+import ManagerDashboard from './ManagerDashboard.jsx';
 
 // 1. MENU & MARQUEE DATA
 const MENU_CATEGORIES = [
